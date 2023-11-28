@@ -1,5 +1,5 @@
-export function getPostApi(URL,callback){
-    fetch(URL)
+export function getPostApi(url,callback){
+    fetch(url)
     .then(response => {
             if(response.ok){
                 return response.json();

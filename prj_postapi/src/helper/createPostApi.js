@@ -14,6 +14,6 @@ export function createPostApi(url,postData,callback){
             throw new Error("error fetching");
         }
     })
-    .then(data=>callback(data))
+    .then(callback)
     .catch(error => console.log(error));
 }
